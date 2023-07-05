@@ -1,5 +1,5 @@
 #Notes-sivun lataus ja uuden muistiinpanon lähetys
-´´´mermaid
+```mermaid
   Kaaviotesti TD
   participant A
   participant B
@@ -8,4 +8,4 @@
     B [toka vastaus/CSS] --> A [odotellaan vielä]   
     B [kolmas vastaus/JS] --> A [ok, nyt avataan sivu]
 
-´´´´
+```
