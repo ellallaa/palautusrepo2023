@@ -1,6 +1,6 @@
 #Notes-sivun lataus ja uuden muistiinpanon lähetys
 ```mermaid
-  Sekvenssikaavio
+  sequenceDiagram
   participant s as selain
   participant p as palvelin   
 
@@ -8,5 +8,5 @@
   p->>s: Here is the HTML file.
   p->>s: And here are the font types etc. in CSS.
   p->>s: And last but not least, the JS. Your turn!
-  
+
 ```
