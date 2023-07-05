@@ -1,2 +1,2 @@
-# palautusrepo
-Fullstackopen exercises - don't copy, I am not that good, yet.
+#README.MD - Ella's FullStackOpen Repository
+This is my repository
