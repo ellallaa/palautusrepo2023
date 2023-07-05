@@ -1,6 +1,6 @@
 #Notes-sivun lataus ja uuden muistiinpanon lähetys
 ```mermaid
-  Kaaviotesti TD
+  Kaaviotesti TD;
   participant A
   participant B
     A [selaimesta kysellään] --> B [web-palvelin vastailee]
