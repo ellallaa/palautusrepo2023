@@ -1,16 +1,19 @@
-#Notes-sivun lataus ja uuden muistiinpanon lähetys
+#Notes-sivu - uuden muistiinpanon lähetys (POST + GET)
 ```mermaid
   sequenceDiagram
-  participant s as selain
-  participant p as palvelin   
+  participant s as selain (HTTP Request)
+  participant p as palvelin (HTTP Response)  
 
-  s->>p: Can I GET this site open? "https://studies.cs.helsinki.fi/exampleapp/notes"
+  s->>p: Oh, this human is about to add a new note. They wrote the note and now they are clicking "Send"? I will POST https://studies.cs.helsinki.fi/exampleapp/new_note this one to you. Content is in the payload!
+  p->>s: Got it! "HTTP Status Code: 302 Found". I need to update this new one to the json file, so other viewers can see it too!
+  s->>p: Can I GET this site re-opened? "https://studies.cs.helsinki.fi/exampleapp/notes"
   p->>s: Here is the HTML file.
   s->>p: Can I GET the CSS too? https://studies.cs.helsinki.fi/exampleapp/main.css"
   p->>s: Here you go! All the colors, font types etc. can be read from this CSS."
   s->>p: Oh! This is not just a static page. Can I GET the JS too? https://studies.cs.helsinki.fi/exampleapp/main.js
-  p->>s: JavaScript is on its way!
-  s->>p: I ran the JS code, could you GET me this data.json file contents, please?
-  p->>s: Content coming up! [{ "content": "This is so fun!", "date": "2023-7-5" }, ... ]
-  S: Great! No I can render the page and the all the latest notes!  
+  p->>s: JavaScript on its way!
+  s->>p: I am running the JS code. Could you GET me this data.json file contents, please?
+  p->>s: Updated content coming up! [{ "content": "This is so fun!", "date": "2023-7-5" }, ... ]  
+
+
 ```
