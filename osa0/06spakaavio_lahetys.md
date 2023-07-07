@@ -5,10 +5,10 @@
   participant s as server (HTTP Response)  
 
   bc->>s: New SPA note coming up! POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
-  Note over, bc, s: content: "new spa note", date: "2023-07-07T10:07:50.414Z"
+  Note over bc, s: content: "new spa note", date: "2023-07-07T10:07:50.414Z"
   Note left of bc: It's so great I dont' need to request all the UI stuff again.
   bc->>bc: JS tells me to reload the notes with the latest addition.
-  Note right of s: Gret! New clients will now be able GET this new note too.
+  Note right of s: Great! New clients will now be able GET this new note too.
 
 ```
 ### In this solution, all clients wont' be in sync without refreshing the page
