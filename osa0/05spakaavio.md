@@ -12,5 +12,5 @@
   s->>bc: JS on its way!
   bc->>s: And the existing notes? GET "https://studies.cs.helsinki.fi/exampleapp/data.json"
   s->>bc: And the notes in json format.
-  s->>s: Rendering now!
+  bc->>bc: Rendering now!
 ```
