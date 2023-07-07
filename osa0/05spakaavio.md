@@ -4,12 +4,12 @@
   participant bc as browser client (HTTP Request)
   participant s as server (HTTP Response)  
 
-  bc->>s: GET https://studies.cs.helsinki.fi/exampleapp/spa
+  bc->>s: GET "https://studies.cs.helsinki.fi/exampleapp/spa"
   s->>bc: Here you go!
-  bc->>s: Can I CSS? GET https://studies.cs.helsinki.fi/exampleapp/main.css?
+  bc->>s: Can I CSS? GET "https://studies.cs.helsinki.fi/exampleapp/main.css"?
   s->>bc: Coming up!
-  bc->>s: And the JavaScript as well? GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+  bc->>s: And the JavaScript as well? GET "https://studies.cs.helsinki.fi/exampleapp/spa.js"
   s->>bc: And the existing notes? GET
-https://studies.cs.helsinki.fi/exampleapp/data.json
+"https://studies.cs.helsinki.fi/exampleapp/data.json"
   Note left of bc: Great, rendering now! Oh, what a beautiful page. I wonder what I need this JS file for?
 ```
