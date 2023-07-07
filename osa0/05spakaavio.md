@@ -9,6 +9,5 @@
   bc->>s: Can I CSS? GET "https://studies.cs.helsinki.fi/exampleapp/main.css"?
   s->>bc: Coming up!
   bc->>s: And the JavaScript as well? GET "https://studies.cs.helsinki.fi/exampleapp/spa.js"
-  s->>bc: And the existing notes? GET
-"https://studies.cs.helsinki.fi/exampleapp/data.json"
+  s->>bc: And the existing notes? GET "https://studies.cs.helsinki.fi/exampleapp/data.json"
 ```
